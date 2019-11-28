@@ -1,6 +1,4 @@
 # Learning to learn
-*Лендинг можно посмотреть по данной ссылке:*
-https://tohaly.github.io/learning-to-learn.github.io/
 
 ## Описание
 Данынй лендинг был сделан для практики и изучения разлчиных технологий применяемых в верстке.
@@ -14,6 +12,10 @@ https://tohaly.github.io/learning-to-learn.github.io/
 - работа с YouTube API
 - использование дерективы keyframes
 
+*Проект можно открыть по следующей ссылке:*
 
-# learning-to-learn.github.io
-Simple landing page using animations, flexbox containers and iframe
+https://tohaly.github.io/learning-to-learn.github.io/
+
+## Планы по развитию
+
+Проект полностью закончен.
