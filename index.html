@@ -93,21 +93,8 @@
                             </p>
                         </div>
                     </div>
-                <!--Надо исправить:
-                  Лишний закрывающий тег </div>
- 
- 
-                             Упс, забыл на валидность проверить!-->
             </section>
             <section class="video">
-              <!--Надо исправить:
-                Способ "наезжания" одного блока на другой не совсем корректный.
-                Использование фиксированной высоты для блока приводит к тому, что редактирование контента внутри блока приведет к искажению отображения верстки.
-
-                Воспользуйтесь свойствами top или отрицательным margin.
-
-                            Сделал через отрицательный margin!
-              -->
                 <h3 class="section-title">
                     Видео на TED
                 </h3>
@@ -117,15 +104,6 @@
                 <div class="video__iframes">
                         <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  <!--Надо исправить:
-                    Вообще, данную структуру необходимо почистить от frameborder="0", являющегося устаревшим методом.
-
-                    DIV обертка для данных iframe является лишней.
-
-                    Высоту и ширину задайте через CSS.
-
-                                done!
-                  -->
                 </div>
             </section>
             <section class="oakley">
@@ -167,7 +145,7 @@
                     </div>
                     <div class="table__cell">
                         <h5 class="table__heading">
-                             2.1 миллиарда
+                            2.1 миллиарда
                         </h5>
                         <p class="table__text">
                             Число нуждающихся в повышении квалификации <br><br>
@@ -236,11 +214,6 @@
                     <blockquote class="khan__quote">
                         Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.
                     </blockquote>
-                  <!--Надо исправить:
-                    kahn__quote -> khan__quote
-
-                                ✓
-                  -->
                     <p class="khan__quote-author">
                         Джордж Лукас
                     </p>
@@ -249,44 +222,10 @@
                     </p>
                     <div class="khan__book-container">
                         <img class="khan__book-pic" alt="Книга Саламан Хан, Весь мир - школа" src="./images/book.jpg">
-                        <!--Надо исправить:
-                          Изображение khan__book-pic отображается некорректно.
-
-                          Необходимо исправить значение width (width: 620 -> width: 620px)
-
-                          Для изображения воспользоваться свойствами:
-
-                          object-fit: cover
-                          И object-posit,ion например, top
-
-                          Данные два свойства работают аналогично background-size и background-position;
-
-                          https://developer.mozilla.org/ru/docs/Web/CSS/object-fit
-                          https://developer.mozilla.org/ru/docs/Web/CSS/object-position
-
-
-                                                ✓
-                        -->
                         <a class="khan__buy-link" href="#">Купить книгу &rarr;</a>
-                      <!--Надо исправить:
-                        Цвет ссылки не соответствует брифу.
-
-
-                                                Выполнил!
-                      -->
-                    </div>
-                  <!--Отлично:
-                    В плане семантики тегов - отлично.
-                  -->
                 </div>
             </section>
             <section class="kaufman">
-              <!--Надо исправить:
-                Используется z-index: -2;
-                Данное свойство не влияет на визуальное отображение, однако блок невозможно выделить / кликнуть по его элементам.
-
-                                                    Сделано!
-                -->               
                 <h3 class="section-title section-title_theme_dark">
                     Принцип обучения
                 </h3>
@@ -312,7 +251,7 @@
                     </div>
                     <div class="table__cell table__cell_theme_dark">
                         <h5 class="table__heading table__heading_theme_dark">
-                           3
+                        3
                         </h5>
                         <p class="table__text table__text_theme_dark">
                             Определите целевой уровень мастерства.
@@ -367,7 +306,7 @@
                         </p>
                     </div>
                     <div class="table__cell table__cell_theme_dark">
-                         <h5 class="table__heading table__heading_theme_dark">
+                        <h5 class="table__heading table__heading_theme_dark">
                             10
                         </h5>
                         <p class="table__text table__text_theme_dark">
@@ -389,14 +328,6 @@
                         <img class="resources__logo" src="./images/logo/n1.svg" alt="N+1">
                         <img class="resources__logo" src="./images/logo/strelka.svg" alt="Strelka">
                         <img class="resources__logo" src="./images/logo/polka.svg" alt="Polka">
-                      <!--Надо исправить::
-                        Данные изображения, скорее, являются контентными, но не декоративными.
-                        Они несут явный смысл пользователю, а при их удалении данный элемент теряет смысловую нагрузку.
-
-                        Воспользуйтесь тегом img, модификаторы можно удалить
-
-                                        Completed!
-                      -->
                     </div>
             </section>
         </main>
@@ -423,7 +354,7 @@
                     <ul class="footer__column-links footer__column-links_color-white">
                         <li><a href="#"><div class="footer__social-icons footer__social-icons_facebook-icon"></div> Facebook</a></li>
                         <li><a href="#"><div class="footer__social-icons footer__social-icons_vkontakte-icon"></div> ВКонтакте</a></li>
-                       <li><a href="#"><div class="footer__social-icons footer__social-icons_instagram-icon"></div> Instagram</a></li>
+                        <li><a href="#"><div class="footer__social-icons footer__social-icons_instagram-icon"></div> Instagram</a></li>
                     </ul>
                 </div>
             </div>
@@ -431,27 +362,3 @@
     </div>
 </body>
 </html>
-
-<!--Резюме по работе:
-
-  Получилось неплохо. С БЭМ дела обстоят сейчас хорошо, структура понятная и соответствует брифу.
-  В целом, выбор необходимых тегов - правильный, лишних оберток - почти нету.
-
-  Элементы, которые необходимо исправить - снабжены соответствующими комментариями в коде.
-  
--->
-
-
-<!-- В целом по работе:
-
-Работа великолепная, выполнена на очень высоком уровне. Самая главная ошибка - с БЭМ (отписал в коде)
-Еще вы оставляете слишком много места между тегами, вероятно вам кажется так лучше читается, но для хорошей читаемости достаточно
-писать на новой строке.
-
-Исправить:
-
-1. Ошибки с БЭМ
-2. Должна быть черной https://yadi.sk/i/XdCwkXyDVM8a7w
-3.  Должны быть белые https://yadi.sk/i/btJGYZdUhWWPfg
-
--->
